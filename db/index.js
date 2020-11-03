@@ -93,8 +93,8 @@ class DB {
             ", department.name " +
             ", SUM(role.salary) AS total_salary " +
             "FROM employee " +
-            "LEFT JOIN role on employee.role_id = role.id " +
-            "LEFT JOIN department on role.department_id = department.id " +
+            "RIGHT JOIN role on employee.role_id = role.id " +
+            "RIGHT JOIN department on role.department_id = department.id " +
             "GROUP BY department.id, department.name "
         );
     }
