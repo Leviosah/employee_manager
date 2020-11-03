@@ -380,7 +380,7 @@ async function addRole() {
 }
 
 async function dropRole() {
-    const allRoles = await db.queryEveryRole();
+    const allRoles = await db.queryAllRoles();
 
     const rolesAvail = allRoles.map(({ id, title }) => ({
         name: title,
