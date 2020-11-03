@@ -400,7 +400,7 @@ async function dropRole() {
 
     console.log("Role has been removed")
 
-    promptQuery();gt
+    promptQuery();
 }
 
 async function queryEveryDept() {
